@@ -486,6 +486,7 @@ class _MusicAppState extends State<MusicApp> with TickerProviderStateMixin {
     _controller = AnimationController(
         duration: _songs[_selected].duration, vsync: _provider);
     _listenController();
+    _pause();
     super.initState();
   }
 
